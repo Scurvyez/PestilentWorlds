@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GameConditionDef>
+        <defName>PW_GeneralFeeders</defName>
+        <conditionClass>PestilentWorlds.GameCondition_GeneralFeeders</conditionClass>
+        <label>general feeders</label>
+        <description>A wave of voracious insects are feeding on various types of local flora.</description>
+        <endMessage>The beetles have moved on.</endMessage>
+        <letterText>The insects may remain for several days or even an entire quadrum. Contain any vital vegetation indoors to prevent unnecessary damage.</letterText>
+        <letterDef>PW_GeneralFeeders</letterDef>
+        <canBePermanent>false</canBePermanent>
+        <allowUnderground>false</allowUnderground>
+    </GameConditionDef>
+
+</Defs>

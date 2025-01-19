@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PestilentWorlds", "PestilentWorlds.csproj", "{A008103C-5347-4C7A-9343-6FBC440857BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A008103C-5347-4C7A-9343-6FBC440857BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A008103C-5347-4C7A-9343-6FBC440857BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A008103C-5347-4C7A-9343-6FBC440857BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A008103C-5347-4C7A-9343-6FBC440857BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE52DF49-FB1D-4245-A0F8-87AE276A7E80}
+	EndGlobalSection
+EndGlobal

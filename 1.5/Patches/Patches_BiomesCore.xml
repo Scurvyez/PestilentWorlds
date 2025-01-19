@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_TreeOak"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0025</beetleDamage>
+                        <beetleDamageChance>0.05</beetleDamageChance>
+                    </li>
+                    <li>
+                        <infestationCategory>LeafMiners</infestationCategory>
+                        <beetleDamage>0.00025~0.0025</beetleDamage>
+                        <beetleDamageChance>0.07</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_TreePoplar"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0025</beetleDamage>
+                        <beetleDamageChance>0.05</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0025</beetleDamage>
+                        <beetleDamageChance>0.05</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

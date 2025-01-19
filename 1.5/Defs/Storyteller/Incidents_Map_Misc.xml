@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <IncidentDef>
+        <defName>PW_GeneralFeeders</defName>
+        <label>general feeders</label>
+        <letterLabel>General feeders</letterLabel>
+        <letterDef>PW_GeneralFeeders</letterDef>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <gameCondition>PW_GeneralFeeders</gameCondition>
+        <workerClass>PestilentWorlds.IncidentWorker_GeneralFeeders</workerClass>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>10</minRefireDays>
+        <durationDays>2~15</durationDays>
+    </IncidentDef>
+
+</Defs>
