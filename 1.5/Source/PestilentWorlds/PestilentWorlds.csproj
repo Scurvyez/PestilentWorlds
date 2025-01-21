@@ -58,14 +58,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debugging\Logging.cs" />
     <Compile Include="Defs\DefModExtensions\ModExtension_InsectDamage.cs" />
-    <Compile Include="Defs\DefModExtensions\ModExtension_PlantCriteria.cs" />
     <Compile Include="Defs\PWDefOf.cs" />
     <Compile Include="GameConditions\GameCondition_GeneralFeeders.cs" />
     <Compile Include="GameConditions\GameCondition_InsectInfestation.cs" />
     <Compile Include="Harmony\Patches.cs" />
+    <Compile Include="Incidents\IncidentWorker_FungusSpreaders.cs" />
     <Compile Include="Incidents\IncidentWorker_GeneralFeeders.cs" />
     <Compile Include="Incidents\IncidentWorker_InsectInfestation.cs" />
+    <Compile Include="Incidents\IncidentWorker_LeafDefoliators.cs" />
+    <Compile Include="Incidents\IncidentWorker_LeafMiners.cs" />
+    <Compile Include="Incidents\IncidentWorker_RootFeeders.cs" />
+    <Compile Include="Incidents\IncidentWorker_WoodBorers.cs" />
+    <Compile Include="Incidents\IncidentWorker_SapFeeders.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Debugging\PWLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

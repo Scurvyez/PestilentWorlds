@@ -13,12 +13,12 @@ namespace PestilentWorlds
         {
             Log.Error("[Pestilent Worlds] ".Colorize(ErrorMsgCol) + msg);
         }
-
+        
         public static void Warning(string msg)
         {
             Log.Warning("[Pestilent Worlds] ".Colorize(WarningMsgCol) + msg);
         }
-
+        
         public static void Message(string msg)
         {
             Log.Message("[Pestilent Worlds] ".Colorize(MessageMsgCol) + msg);

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using LudeonTK;
 using RimWorld;
 using UnityEngine;
@@ -86,16 +87,13 @@ namespace PestilentWorlds
 
                     if (!(finalDamageAmount > 0f))
                         continue;
-
-                    PWLog.Message($"{plant.LabelCap}, " +
-                                  $"at {plant.Position}, " +
-                                  $"base damage: {baseDamage:F5}, " +
-                                  $"growth factor: {growthDamageFactor:F2}, " +
-                                  $"health factor: {healthDamageFactor:F2}, " +
-                                  $"damaged for: {Mathf.CeilToInt(finalDamageAmount * 
-                                                                  Constants.PlantTickLong)}");
+                    
+                    // debugging, remove later
+                    //Logging.LogPlantDamageData(plant, baseDamage, 
+                        //growthDamageFactor, healthDamageFactor, finalDamageAmount);
+                    
                     plant.TakeDamage(new DamageInfo(
-                        DamageDefOf.Bite, finalDamageAmount * Constants.PlantTickLong));
+                        DamageDefOf.Deterioration, finalDamageAmount * Constants.PlantTickLong));
                 }
             }
         }
@@ -136,6 +134,35 @@ namespace PestilentWorlds
                         AffectedPlants.Add(specificPlant);
                     }
                 }
+            }
+            PWLog.Message($"Plants in collection, 1st pass: {AffectedPlants.Count}");
+            RandomlyRemovePercentageOfPlants(AffectedPlants, Constants.RemovalPct);
+            PWLog.Message($"Plants in collection, 2nd pass: {AffectedPlants.Count}");
+        }
+        
+        /// <summary>
+        /// Removes a portion of a collection of plants.
+        /// </summary>
+        /// <param name="collection">The collection to remove entries from.</param>
+        /// <param name="percentage">The percentage to remove (0 - 100)</param>
+        private static void RandomlyRemovePercentageOfPlants(HashSet<Plant> collection, float percentage)
+        {
+            if (collection == null || collection.Count == 0 || percentage <= 0f)
+                return;
+
+            int totalToRemove = Mathf.CeilToInt(collection.Count * (percentage / 100f));
+            List<Plant> plantsList = collection.ToList();
+
+            for (int i = 0; i < totalToRemove; i++)
+            {
+                if (plantsList.Count == 0)
+                    break;
+
+                int randomIndex = Rand.Range(0, plantsList.Count);
+                Plant plantToRemove = plantsList[randomIndex];
+
+                collection.Remove(plantToRemove);
+                plantsList.RemoveAt(randomIndex);
             }
         }
         

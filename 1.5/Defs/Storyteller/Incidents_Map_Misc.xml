@@ -14,7 +14,7 @@
         <workerClass>PestilentWorlds.IncidentWorker_GeneralFeeders</workerClass>
         <baseChance>1.0</baseChance>
         <minRefireDays>10</minRefireDays>
-        <durationDays>2~15</durationDays>
+        <durationDays>1~20</durationDays>
     </IncidentDef>
 
 </Defs>

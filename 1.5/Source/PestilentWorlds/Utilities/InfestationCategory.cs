@@ -1,3 +1,5 @@
+
+
 namespace PestilentWorlds
 {
     public enum InfestationCategory : byte

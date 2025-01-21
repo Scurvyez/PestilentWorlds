@@ -33,9 +33,8 @@ namespace PestilentWorlds
             if (matchingPlant == null) 
                 return false;
             
-            PWLog.Warning($"Incident def: {def.defName}");
-            PWLog.Warning($"Incident fired because of plant: {matchingPlant.LabelCap} " +
-                          $"at position: {matchingPlant.Position}");
+            // debugging, remove later
+            Logging.LogIncidentCauseData(def.defName, matchingPlant);
             
             return true;
         }

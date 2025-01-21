@@ -2,6 +2,81 @@
 <Patch>
 
     <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_Grass"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.00075</beetleDamage>
+                        <beetleDamageChance>0.085</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_TallGrass"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.00075</beetleDamage>
+                        <beetleDamageChance>0.085</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_Dandelion"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0015</beetleDamage>
+                        <beetleDamageChance>0.075</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_Bush"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0015</beetleDamage>
+                        <beetleDamageChance>0.075</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
+        <value>
+            <li Class="PestilentWorlds.ModExtension_InsectDamage">
+                <insectThreats>
+                    <li>
+                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <beetleDamage>0.00025~0.0025</beetleDamage>
+                        <beetleDamageChance>0.05</beetleDamageChance>
+                    </li>
+                </insectThreats>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef[defName="Plant_TreeOak"]</xpath>
         <value>
             <li Class="PestilentWorlds.ModExtension_InsectDamage">
@@ -31,20 +106,10 @@
                         <beetleDamage>0.00025~0.0025</beetleDamage>
                         <beetleDamageChance>0.05</beetleDamageChance>
                     </li>
-                </insectThreats>
-            </li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="Plant_Berry"]</xpath>
-        <value>
-            <li Class="PestilentWorlds.ModExtension_InsectDamage">
-                <insectThreats>
                     <li>
-                        <infestationCategory>GeneralFeeders</infestationCategory>
+                        <infestationCategory>LeafMiners</infestationCategory>
                         <beetleDamage>0.00025~0.0025</beetleDamage>
-                        <beetleDamageChance>0.05</beetleDamageChance>
+                        <beetleDamageChance>0.07</beetleDamageChance>
                     </li>
                 </insectThreats>
             </li>
